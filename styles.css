@@ -29,6 +29,11 @@ img{
    margin-left:2%;
    margin-right:2%;
 }
+img.qri{
+   border-style:solid;
+   border-width:20px;
+   border-color:white;
+}
 span.mark{
    color:red;
 }
