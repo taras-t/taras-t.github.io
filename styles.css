@@ -1,0 +1,63 @@
+body{
+   background-image:url("images/background.jpg");
+   padding-top:3%;
+}
+table.main{
+   position:absolute;
+   left:3%;
+   right:3%;
+   width:94%;
+}
+#top,#main,#bottom{
+   padding:2%;
+}
+#top,#bottom{
+   background-color:green;
+}
+#main{
+   background-color:khaki;
+   color:maroon;
+}
+#bottom{
+   color:yellow;
+   font-family:serif;
+   font-weight:bold;
+   text-align:center;
+}
+img{
+   border-style:none;
+   margin-left:2%;
+   margin-right:2%;
+}
+span.mark{
+   color:red;
+}
+span.turn{
+   color:green;
+}
+span.damp{
+   color:blue;
+}
+tr.mark{
+   background-color:yellow;
+}
+td.list{
+   padding:4px;
+}
+td.land{
+   padding:24px;
+}
+noscript{
+   color:red;
+}
+@media print{
+   #top,form,p{
+      display:none;
+   }
+   #bottom{
+      background-color:khaki;
+      color:maroon;
+      text-align:left;
+      font-weight:normal;
+   }
+}
