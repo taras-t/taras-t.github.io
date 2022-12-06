@@ -26,7 +26,7 @@
                   var R, H;
                   R=document.referrer;
                   H=document.href
-                  if((R != "")&&(R.substr(0,5)=H.substr(0,5)))document.getElementById("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + escape(R);
+                  if((R != "")&&(R.substr(0,5)==H.substr(0,5)))document.getElementById("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + escape(R);
                   document.writeln("<p align=\"center\">" + R + "</p>");
                </script>
             </td>
