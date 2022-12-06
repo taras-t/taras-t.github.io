@@ -25,7 +25,8 @@
                <script type="text/javascript">
                   var R, H;
                   R=document.referrer;
-                  H=location.href
+                  H=location.href;
+alert(R+" "+H);
                   if((R != "")&&(R.substr(0,5)==H.substr(0,5)))document.getElementById("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + escape(R);
                   document.writeln("<p align=\"center\">" + R + "</p>");
                </script>
