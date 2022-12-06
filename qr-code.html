@@ -20,13 +20,13 @@
             <td id="main">
                <h1>QR-код</h1>
                <noscript>Для роботи повинен бути увімкнений <b>JavaScript.</b></noscript>
-               <div align="center"><img id="qr"src="images/kvochka.jpg" class="qri" alt="QR-код" title="QR-код"></div><br>
+               <p align="center"><img id="qr"src="images/kvochka.jpg" class="qri" alt="QR-код" title="QR-код"></p>
                <script type="text/javascript">
                   var R, H;
                   R=document.referrer;
                   H=location.href;
                   if((R != "")&&(R.substr(0,15)==H.substr(0,15)))document.getElementById("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + escape(R);
-                  document.writeln("<div align=\"center\">" + R + "</div>");
+                  document.writeln("<p align=\"center\">" + R + "</p>");
                </script>
             </td>
          </tr>
