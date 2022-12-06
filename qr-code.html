@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <title>QR-код - Квочка</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="author" content="Цьвок Тарас">
+      <meta name="description" content="Сервіс для розрахунку параметрів інкубації свійської птиці">
+      <meta name="keywords" content="інкубація, інкубатор, птиця, яйця, курка, качка, індокачка, гуска, індик, перепілка, перевертати, зволожувати">
+      <link rel="stylesheet" href="styles.css" type="text/css">
+   </head>
+   <body>
+      <table cellspacing="0" class="main">
+         <tr>
+            <td id="top">
+               <a href="./"><img src="images/logo.jpg" alt="Квочка" width="128" height="96"></a>
+               <a href="./"><img src="images/caption.jpg" alt="Квочка" width="208" height="96"></a>
+            </td>
+         </tr>
+         <tr>
+            <td id="main">
+               <h1>QR-код</h1>
+               <noscript>Для роботи повинен бути увімкнений <b>JavaScript.</b></noscript>
+               <p align="center"><img id="qr"src="images/kvochka.jpg" class="qri" alt="QR-код" title="QR-код"></p>
+               <script type="text/javascript">
+                  var R, H;
+                  R=document.referrer;
+                  H=location.href;
+alert(R+" "+H);
+                  if((R != "")&&(R.substr(0,5)==H.substr(0,5)))document.getElementById("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + escape(R);
+                  document.writeln("<p align=\"center\">" + R + "</p>");
+               </script>
+            </td>
+         </tr>
+         <tr>
+            <td id="bottom">
+               &copy; Цьвок Тарас
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
