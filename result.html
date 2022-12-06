@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <title>Квочка</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="author" content="Цьвок Тарас">
+      <meta name="description" content="Сервіс для розрахунку параметрів інкубації свійської птиці">
+      <meta name="keywords" content="інкубація, інкубатор, птиця, яйця, курка, качка, індокачка, гуска, індик, перепілка, перевертати, зволожувати">
+      <link rel="stylesheet" href="styles.css" type="text/css">
+      <script type="text/javascript" src= "scripts/functions.js"></script>
+      <script type="text/javascript" src= "scripts/forms.js"></script>
+      <script type="text/javascript" src= "scripts/help.js"></script>
+      <script type="text/javascript" src= "scripts/db.js"></script>
+      <script type="text/javascript" src= "scripts/result.js"></script>
+   </head>
+   <body>
+      <table cellspacing="0" class="main">
+         <tr>
+            <td id="top">
+               <a href="./"><img src="images/logo.jpg" alt="Квочка" width="128" height="96"></a>
+               <a href="./"><img src="images/caption.jpg" alt="Квочка" width="208" height="96"></a>
+            </td>
+         </tr>
+         <tr>
+            <td id="main">
+               <p>&nbsp;&gt;<a class="link" href="readme.html">Про інкубацію</a></p>
+               <noscript>Для роботи повинен бути увімкнений <b>JavaScript.</b></noscript>
+               <script type="text/javascript">
+                  if((isParam("type"))&&(isParam("date"))&&(isParam("month"))&&(isParam("year"))){
+                     document.title = getTitle();
+                     document.writeln("<h1>", getTitle(), "</h1>");
+                     writeP("Зробіть закладку на цю сторінку, і у вас буде можливість в будь-який час мати доступ до створеного графіку інкубації. Для декількох інкубаторів з іншими налаштуваннями &ndash; створити по окремій закладці. Можна скористатися QR-кодом, щоб  обмінятися  посиланням на цю сторіннку.");
+                     writeP("<span class=\"turn\">&uarr;&darr;</span> -  перевертати, <span class=\"damp\">&rsquo;&sbquo;&rsquo;</span> - зволожувати");
+                     writeResult();
+                  }
+                  writeBackForm();
+               </script>
+               <p align="right"><a class="link" href="qr-code.html"><img src="https://dabuttonfactory.com/button.png?t=QR-%D0%BA%D0%BE%D0%B4+%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8&f=Open+Sans-Bold&ts=16&tc=fff&tshs=1&tshc=000&hp=6&vp=4&c=12&bgt=gradient&bgc=11c700&ebgc=095c00" width="150" height="24" alt="QR-код сторінки" title="Створити QR-код сторінки"></a></p>
+            </td>
+         </tr>
+         <tr>
+            <td id="bottom">
+               &copy; Цьвок Тарас
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
