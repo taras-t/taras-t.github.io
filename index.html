@@ -5,13 +5,14 @@
     <meta charset="utf-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta name="author" content="Цьвок Тарас">
-    <meta name="description" content="Іменини сьогодні">
+    <meta name="description" content="Іменини сьогодні і фокус з числами">
     <script src="informer/names.js"></script>
   </head> 
   <body>
     <script>
       var w_date=new Date();
       if(getNames(w_date) != "") document.writeln("<p>" + getNames(w_date) + "</p>");
-    </script> 
+    </script>
+    <a href="#" onclick="focusRun()">Фокус з числами!</a>
   </body> 
 </html>
